@@ -3,7 +3,7 @@ Config.CoreName = "qb-core"
 Config.TargetName = "qb-target"
 Config.PhoneMailEvent = 'qb-phone:server:sendNewMail'
 Config.PhoneBoothModels = {
-    'prop_phonebox_01',
+    'prop_phonebox_01b',
     'prop_phonebox_02',
     'prop_phonebox_03',
     'prop_phonebox_04',
@@ -16,6 +16,13 @@ Config.Drugs = {
         Icon = 'cannabis', -- Get icons from https://fontawesome.com/icons
         SellPrice = { minimum = 150, maximum = 250}
     },
+    {
+        Name = "Meth",
+        Description = "Sell your meth!",
+        ItemName = 'meth_baggy',
+        Icon = 'pills', -- Get icons from https://fontawesome.com/icons
+        SellPrice = { minimum = 250, maximum = 350}
+    }
 }
 Config.PedModels = {
     'a_m_m_ktown_01',

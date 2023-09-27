@@ -53,7 +53,8 @@ RegisterNetEvent('rv_drugsales:client:SellDrug', function(drug)
         return
     end
     QBCore.Functions.Notify(Locale.Success.looking_for_buyer, 'success', 5000)
-    -- Citizen.Wait(60000, 180000)
+    -- Citizen.Wait(5000)
+    Citizen.Wait(60000, 180000)
     BuyingPrice = math.random(drug.SellPrice.minimum, drug.SellPrice.maximum)
     SellingAmount = math.random(1, amount)
     TriggerServerEvent(Config.PhoneMailEvent, {
